@@ -1,0 +1,21 @@
+HW 1: finish the following code by yourself
+Use reference parameters in function getNumbers() and swapValues()
+-------------------------------------------
+
+int main( ) { int firstNum, secondNum;
+
+getNumbers(firstNum, secondNum); 
+swapValues(firstNum, secondNum); 
+showResults(firstNum, secondNum); 
+return 0;
+
+}
+
+Sample Dialogue
+
+Enter two integers: 5 6 
+In reverse order the numbers are: 6 5
+-------------------------------------------
+HW 2:
+Use swapValues() to sort a int array[] by bubble sort algorithm
+-------------------------------
