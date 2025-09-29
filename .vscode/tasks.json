@@ -7,7 +7,7 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${file}",
+                "${file}","lib_io.cpp","function.cpp",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],

@@ -29,7 +29,8 @@ void f(){
     cout<<"d.d="<<d.d<<endl;
 }
 int main() {
-    int a=0;
+    int a[]={1,2,3,4,5,6,7,8,9,0};
     f();
+    cout<<a<<endl;
     return 0;
 }
