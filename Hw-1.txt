@@ -2,7 +2,8 @@ HW 1: finish the following code by yourself
 Use reference parameters in function getNumbers() and swapValues()
 -------------------------------------------
 
-int main( ) { int firstNum, secondNum;
+int main( ) { 
+int firstNum, secondNum;
 
 getNumbers(firstNum, secondNum); 
 swapValues(firstNum, secondNum); 
@@ -17,5 +18,25 @@ Enter two integers: 5 6
 In reverse order the numbers are: 6 5
 -------------------------------------------
 HW 2:
-Use swapValues() to sort a int array[] by bubble sort algorithm
+
+Use swapValues() to sort a int array[] by bubble sort algorithm in the same file.
+Use overloading function for getNumbers(int array[],int size) and 
+showResults(int array[],int size)
+-------------------------------------------
+const SZ =6;
+int main( ) { 
+int firstNum, secondNum;
+
+getNumbers(firstNum, secondNum); 
+swapValues(firstNum, secondNum); 
+showResults(firstNum, secondNum); 
+
+int array[SZ];
+getNumbers(array,SZ); 
+sortValues(array,SZ); 
+showResults(array,SZ); 
+
+return 0;
+
+}
 -------------------------------
