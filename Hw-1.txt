@@ -1,4 +1,5 @@
 HW 1: finish the following code by yourself
+DO NOT copy from your textbook !!!!!
 Use reference parameters in function getNumbers() and swapValues()
 -------------------------------------------
 
