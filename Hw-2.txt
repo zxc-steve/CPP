@@ -1,6 +1,7 @@
 HW 2:
-improve the prime factor program by using the following structure and 
-save all factors into a int array (not shown here).
+improve the prime factor program by using the following structure 
+while loop + for loop at line 9 / 10.
+and save all factors into a int array (not shown here).
 
  int n=20;
  int r=n;
