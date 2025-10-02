@@ -3,7 +3,7 @@
 #include "lib_io.h"
 using namespace std;
 int main(){
- int n=256;
+ int n=180;
  int r=n,cnt=0;
  while(r>1){
      for(int i=2;i<=r;i++){
@@ -14,6 +14,8 @@ int main(){
          }
      }
 }
+cout<<endl;
+
 
 cout<<"f1="<<f1()<<endl;
 cout<<"f2="<<f2()<<endl;
