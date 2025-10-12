@@ -1,0 +1,24 @@
+The issue of being unable to enter input in an external terminal launched by VS Code on macOS Catalina and onwards, despite setting "externalConsole": true, is a known problem tracked under issue #5079.
+A workaround involves having VS Code explicitly launch the Terminal application once. This can be achieved by adding and running a specific task in your tasks.json file.
+Here is the JSON code for the task to be added to your tasks.json:
+程式碼
+
+{
+  "label": "Open Terminal",
+  "type": "shell",
+  "command": "osascript -e 'tell application \"Terminal\"\ndo script \"echo hello\"\nend tell'",
+  "problemMatcher": []
+}
+Explanation of the Task:
+"label": "Open Terminal": This provides a descriptive name for the task, making it easy to identify in the VS Code task runner.
+"type": "shell": Specifies that this is a shell command to be executed.
+"command": "osascript -e 'tell application \"Terminal\"\ndo script \"echo hello\"\nend tell'": This is the core of the workaround.
+osascript: A command-line utility for executing AppleScript.
+tell application "Terminal": Targets the Terminal application.
+do script "echo hello": Instructs the Terminal application to execute the command echo hello. This effectively forces the Terminal to open and become active, which seems to resolve the input issue for subsequent external console launches from VS Code.
+"problemMatcher": []: Indicates that no problem matching is required for this task.
+To use this workaround:
+Open your tasks.json file in VS Code (usually found in the .vscode folder of your project).
+Add the provided JSON object to the tasks array within the tasks.json file.
+Run this task once in VS Code (e.g., via Terminal > Run Task... and selecting "Open Terminal").
+After running this task, subsequent launches of external consoles from VS Code should allow you to enter input.
