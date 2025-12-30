@@ -1,0 +1,17 @@
+				//	Identify the type
+int i;					//	base type + variable
+int *p=&i;			// 	base type + type modifier + variable name=> Compound Type variable
+int a[6],*p1=a;//	same, but more variables
+int *ap[6];
+int &r = i;			// more about reference definition !!
+auto &r1 = i;
+const int ci=i;	//	const specifier + base type
+const auto pi = 3.1415;
+const int &cir = i;		// vector.push_back(const T& value)
+const int *cp	= &i;
+const int *cap[4] = {a,&a[1],&a[2],&ci};
+
+				// function
+// overloading
+
+				// class
